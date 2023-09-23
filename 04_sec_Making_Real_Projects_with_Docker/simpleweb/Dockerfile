@@ -6,10 +6,15 @@ FROM node:14-alpine
 # install some dependencies
 # npm not included by default
 # adding copy
+WORKDIR /usr/app
+# it will be automatically created
 COPY ./ ./ 
 RUN npm install
 # setup default commnad
 CMD ["npm","start"]
 # in order to run the container we need to expose the port 8088 of the container
 # docker run -p 8088:8088 cristian01dinu/simpleweb
+# docker run -it cristian01dinu/simpleweb sh 
+# all files are in the root - not ok we add usr/app as WORKDIR
+# we need a workig directory
 # 8080 is ocupied by jenkins
