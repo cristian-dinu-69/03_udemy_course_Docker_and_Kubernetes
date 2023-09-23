@@ -10,3 +10,6 @@ COPY ./ ./
 RUN npm install
 # setup default commnad
 CMD ["npm","start"]
+# in order to run the container we need to expose the port 8088 of the container
+# docker run -p 8088:8088 cristian01dinu/simpleweb
+# 8080 is ocupied by jenkins
