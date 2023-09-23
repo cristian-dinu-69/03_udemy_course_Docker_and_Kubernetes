@@ -21,3 +21,4 @@ CMD ["npm","start"]
 # we need a workig directory usr/app
 # 8080 is ocupied by jenkins
 # unnec rebuilds COPY ./package.json ./
+# clean docker rmi $(docker images -f "dangling=true" -q) or docker system prune !!!
