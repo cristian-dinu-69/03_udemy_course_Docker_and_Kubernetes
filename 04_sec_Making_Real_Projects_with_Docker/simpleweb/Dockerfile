@@ -5,6 +5,8 @@ FROM node:14-alpine
 # go to docker hub : explore: search for node : 
 # install some dependencies
 # npm not included by default
+# adding copy
+COPY ./ ./ 
 RUN npm install
 # setup default commnad
 CMD ["npm","start"]
