@@ -1,0 +1,13 @@
+1 docker container with Node App
+1 docker container with redis App visits
+
+inside visits add Dockerfile
+#docker build .
+docker build -t cristian01dinu/visits:latest .
+docker run cristian01dinu/visits - errors
+
+docker run redis
+docker run cristian01dinu/visits - error - containers are not connected
+need network - using CLI -setup a network between containers -difficult
+
+solution - docker compose - separate tool
