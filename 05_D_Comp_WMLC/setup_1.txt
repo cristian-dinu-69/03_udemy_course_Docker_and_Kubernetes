@@ -10,4 +10,11 @@ docker run redis
 docker run cristian01dinu/visits - error - containers are not connected
 need network - using CLI -setup a network between containers -difficult
 
-solution - docker compose - separate tool
+solution - docker compose - separate tool 
+create docker-compose.yml
+visits3 working
+cd visits3
+docker-compose up -d
+docker-compose down
+
+#other docker-compose commands :
